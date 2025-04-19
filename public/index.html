@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Encode+Sans+SC:wght@100..900&family=Great+Vibes&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="styles.css" />
+
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body onload="start()">
+        <div class="main">
+            <div class="weather">
+                <div class="city-name"></div>
+                <div class="current-weather">
+                    <div class="weather-data">
+                        <span class="current-temp">
+                            <span class="temp"></span>
+                            <span class="high-low-temp">
+                                <div>L: <span class="low-temp-text">0</span></div>
+                                <div>H: <span class="high-temp-text">0</span></div>
+                            </span>
+                        </span>
+                        
+                        <span>
+                            <img class="weather-icon"/>
+                        </span>
+                        
+                        <span class="sunrise-set">
+                            <div><b>Sunrise</b></div>
+                            <div class="sunrise-text">00:00am</div>
+                            <div><b>Sunset</b></div>
+                            <div class="sunset-text">00:00pm</div>
+                        </span>
+
+                        <span class="wind">
+                            <div class="wind-compass">
+                                <img class="compass-arrow" src="images/compass-arrow.png" />
+                            </div>
+                            <div class="wind-speed"></div>
+                        </span>
+
+                        <span class="other-data">
+                            <span>Humidity:</span> <span class="humidity">0</span>
+                            <span>Chance Prec:</span> <span class="percipitation">0</span>
+                            <span>Elevation:</span> <span class="elevation">0</span>
+                        </span>
+                    </div>
+                    
+                </div>                
+            </div>
+            <div class="graph">
+                <img src="weather-graph.png">
+            </div>
+            <div class="stocks">
+                <!-- <span class="stock-text"><h4>Stocks</h4></span> -->
+                <span class="stock-cards"></span>
+            </div>
+        </div>
+    </body>
+</html>

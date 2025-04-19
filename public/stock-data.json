@@ -1,0 +1,58 @@
+[
+  {
+    "symbol": "AAPL",
+    "price": 196.98,
+    "delta": 11.73,
+    "percent": 6.33,
+    "cost": 185.25
+  },
+  {
+    "symbol": "AMZN",
+    "price": 172.61,
+    "delta": -6.7,
+    "percent": -3.74,
+    "cost": 179.31
+  },
+  {
+    "symbol": "DASH",
+    "price": 181.24,
+    "delta": 69.68,
+    "percent": 62.46,
+    "cost": 111.56
+  },
+  {
+    "symbol": "FSELX",
+    "price": 23.56,
+    "delta": 0.27,
+    "percent": 1.16,
+    "cost": 23.29
+  },
+  {
+    "symbol": "GOOGL",
+    "price": 151.16,
+    "delta": 1.4,
+    "percent": 0.93,
+    "cost": 149.76
+  },
+  {
+    "symbol": "NOW",
+    "price": 772.16,
+    "delta": 22.16,
+    "percent": 2.95,
+    "cost": 750
+  },
+  {
+    "symbol": "NVDA",
+    "price": 101.49,
+    "delta": -0.96,
+    "percent": -0.94,
+    "cost": 102.45
+  },
+  {
+    "symbol": "RDDT",
+    "price": 96.16,
+    "delta": 48.08,
+    "percent": 100,
+    "cost": 48.08
+  }
+]

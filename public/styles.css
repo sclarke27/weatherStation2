@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Wasted';
+    src: url('fonts/Wasted.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html, body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+.main {
+    width: 800px;
+    height: 480px;
+    display: grid;
+    grid-template-rows: 173px 180px 127px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 200, 0.5);
+    border-radius: 10px;
+    background-color: white;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(0,0,255,0.75) 0%, rgba(0,0,255,0.25) 100%);     */
+}
+.weather,
+.graph,
+.stocks {
+    margin: 0px;
+    padding: 10px;
+}
+
+.weather {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.graph {
+    height: 195px;
+    overflow: hidden;
+    height: 160px;
+}
+
+.graph > img {
+    position: relative;
+    top: 7px;
+    left: -10px;
+    z-index: 1;
+}
+
+.stock-cards,
+.stocks {
+    display: flex;
+    gap: 13px;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(0,0,255,1) 0%, rgba(255,255,255,0) 100%); */
+}
+
+.stock-card {
+    /* font-family: "Alumni Sans Pinstripe", sans-serif; */
+    width: 85px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    /* border: solid 1px rgba(0,0,0,0.25); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+
+.stock-card > span {
+    /* font-weight: bold; */
+
+}
+
+.stock-card > h4 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Encode Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    /* background-color: blue; */
+}
+
+.stock-card > h4.up {
+    background-color: green;
+}
+
+.stock-card > h4.down {
+    background-color: red;
+}
+
+.stock-text {
+    color: white;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    display: flex;
+    background-color: blue;
+    border: inset 1px white;
+    box-shadow: 0 0 3px rgba(0,0,0,1);
+}
+
+.stock-text h4 {
+    transform: rotate(270deg);
+    margin: 0;
+    padding: 0;
+}
+
+.city-name {
+    font-family: Wasted;
+    color: red;
+    text-shadow: 1px 1px 3px black;
+    margin-inline-start: 20px;
+    font-size: 72px;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.25);
+    position: relative;
+    top: -24px;
+    height: 110px;
+    text-align: center;
+    z-index: 1;
+}
+
+.weather-data {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 15px;
+    top: -20px;
+}
+
+.weather-data > span {
+    /* height: 48px; */
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0 10px;    
+    
+}
+
+.weather-data > span > span.temp {
+    font-size: 64px;
+}
+
+.weather-data > span:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-weather {
+    position: relative;
+    top: -14px;
+}
+
+.current-temp {
+    width: 170px;
+}
+
+.high-low-temp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 1.2rem;
+}
+
+.wind {
+    width: 80px;
+    text-align: left;
+}
+
+.wind-compass {
+    position: relative;    
+    width: 80px;
+    height: 80px;
+    background-image: url(images/compass-background.png);
+    background-size: 80px;
+}
+
+.wind-compass > img {
+    position: absolute;
+    width: 80px;
+}
+
+.wind-speed {
+    text-align: center;
+}
+
+sunrise-set {
+    margin-top: 8px;
+}
+
+.sunrise-set > div:nth-child(odd) {
+    font-size: 1.2rem;
+}
+
+.compass-arrow {
+    transition: all 150ms ease-in-out;
+}
+
+.other-data {
+    text-align: left;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: min-content;
+    gap: 0 5px;
+    white-space: nowrap;
+}
+
+/* .weather-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 180px;
+} */
